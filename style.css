@@ -1,0 +1,26 @@
+/*
+Theme Name: Listable Child
+Theme URI: https://pixelgrade.com/demos/listable/
+Author: PixelGrade
+Author URI: https://pixelgrade.com/
+Description: A directory WordPress theme that will help you create and manage a local or global listings site.
+Template: listable
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: listable-child-theme
+Domain Path: /languages/
+Tags: light, white, red
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Listable is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+/* ADD YOUR NEW CSS RULES HERE */
+
+/* This file assumes you wish to add new CSS rules that will overwrite the ones in the parent's CSS files
+If you wish however, you can copy the whole style.css file from the parent here and hack at it - see functions.php for more details.
+In that case please remember that you still need to retain the header above (replace the header of the parent style.css with the one above),
+specifically the 'Template: listable' line. */
