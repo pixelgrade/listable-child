@@ -43,10 +43,10 @@ function listable_child_enqueue_styles() {
 	// use the parent version for cachebusting
 	$parent = $theme->parent();
 
-	if ( is_rtl() ) {
-		wp_enqueue_style( 'listable-rtl-style', get_template_directory_uri() . '/rtl.css', array(), $parent->get( 'Version' ) );
-	} else {
+	if ( !is_rtl() ) {
 		wp_enqueue_style( 'listable-style', get_template_directory_uri() . '/style.css', array(), $parent->get( 'Version' ) );
+	} else {
+		wp_enqueue_style( 'listable-style', get_template_directory_uri() . '/rtl.css', array(), $parent->get( 'Version' ) );
 	}
 
 	// Here we are adding the child style.css while still retaining
