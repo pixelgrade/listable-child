@@ -38,13 +38,12 @@ add_action( 'after_setup_theme', 'listable_child_theme_setup' );
 function listable_child_enqueue_styles() {
 	// Here we are adding the child style.css while still retaining
 	// all of the parents assets (style.css, JS files, etc)
-	wp_enqueue_style( 'listable-style', get_template_directory_uri() . '/style.css' );
 	wp_enqueue_style( 'listable-child-style',
 		get_stylesheet_uri(),
 		array('listable-style') //make sure the the child's style.css comes after the parents so you can overwrite rules
 	);
 }
-add_action( 'wp_enqueue_scripts', 'listable_child_enqueue_styles', 11 );
+add_action( 'wp_enqueue_scripts', 'listable_child_enqueue_styles' );
 
 
 /**
